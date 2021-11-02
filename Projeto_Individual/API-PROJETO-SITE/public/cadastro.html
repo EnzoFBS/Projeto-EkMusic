@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleglobal.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <div class="card">
+                <h2 class="bem-vindo">Bem Vindo!</h2>
+                <div class="formulario">
+                    <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                      <span class="letra"> Nome:</span><br>
+                        <input name="nome" type="text" placeholder="Ada Lovelace"><br>
+                        <span class="letra"> Username</span><br>
+                        <input name="username" type="text" placeholder="Ada Lovelace">
+                        <br>
+                        <span class="letra">E-mail:</span><br>
+                        <input name="email" type="text" placeholder="meuemail@provedor.com">
+                        <br>
+                        <span class="letra">Senha:</span><br>
+                        <input name="senha" type="password" placeholder="******">
+                        <br>
+                        <span class="letra">Confirmação da Senha:</span><br>
+                        <input name="confirmacao-senha" type="password" placeholder="******">
+                        <br><br><br><br>
+                        <button class="btn">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+</body>
+</html>
