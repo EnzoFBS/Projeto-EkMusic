@@ -10,8 +10,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+.page .logo{
+    
+    height: 100%;
+
+}
+
+#logo_music{
+    width: 300px;
+    height: 280px;
+    position: absolute;
+    margin-left: 1%;
+}
+
 body .page {
-    background-image: url('../img/walpape_log.jpg');
+    background-image: url('../img/teste1.jpg');
     background-size: cover;
     display: flex;
     align-items: center;
@@ -20,9 +33,9 @@ body .page {
 }
 
 .page .card {
-    background-color: #069DEF;
-    height: 700px;
-    width: 400px;
+    
+    height: 600px;
+    width: 350px;
     display: flex;
     justify-content: center;
     align-content: space-around;
@@ -30,11 +43,17 @@ body .page {
     flex-direction: column;
     flex-wrap: wrap;
     border-radius: 15px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .page .card .letra{
     font-size: 20px;
-    
+    line-height: 0.6;
 }
 
 input{
@@ -61,11 +80,17 @@ input{
 
 .bem-vindo{
     margin-bottom: 7%;
+    color: black;
 }
 
+#hiperlinkc{
+    font-size: 20px;
+    margin-left: 14%;
+}
 
 
 form {
     display: flex;
     flex-direction: column;
+    line-height: 0.9;
 }
