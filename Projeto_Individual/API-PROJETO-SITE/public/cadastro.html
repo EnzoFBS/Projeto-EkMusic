@@ -10,17 +10,14 @@
 <body>
    
     <div class="page">
-        <div class="logo"> <img id="logo_music" src="../public/img/logoteste2-removebg-preview.png" alt=""> </div>
         <div class="container">
             <div class="card">
-                <h2 class="bem-vindo">Bem Vindo!</h2>
+                <h2 class="bem-vindo">Cadastrar <hr> </h2>
+               
                 <div class="formulario">
                     <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
                       <span class="letra"> Nome:</span><br>
                         <input name="nome" type="text" placeholder="Ada Lovelace"><br>
-                        <span class="letra"> Username</span><br>
-                        <input name="username" type="text" placeholder="Ada Lovelace">
-                        <br>
                         <span class="letra">E-mail:</span><br>
                         <input name="email" type="text" placeholder="meuemail@provedor.com">
                         <br>
@@ -30,14 +27,31 @@
                         <span class="letra">Confirmação da Senha:</span><br>
                         <input name="confirmacao-senha" type="password" placeholder="******">
                         <br><br>
-                        <button class="btn">Cadastrar</button><br><br>
-                        <a id="hiperlinkc" href="#">Já sou cadastrado</a>
+                        <button type="button" class="btn">Cadastrar</button><br>
+                       
                     </form>
                 </div>
             </div>
         </div>
+        <div class="card">
+            <h2 class="bem-vindo2">Login <hr> </h2>
+            <div class="formulario">
+                <form  method="post" onsubmit="return cadastrar()">
+                    <span class="letra"> E-mail:</span><br>
+                    <input name="email" type="text" placeholder="meuemail@provedor.com">
+                    <br>
+                    <span class="letra">Senha:</span><br>
+                    <input name="senha" type="password" placeholder="******">
+                    <br>
+                    <br><br>
+                    <button type="button" class="btn2">Logar</button><br><br>
+                    
+                </form>
+            </div>
+        </div>
         
     </div>
+
 
 
 </body>
