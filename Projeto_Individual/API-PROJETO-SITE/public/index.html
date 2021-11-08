@@ -82,22 +82,22 @@
                 </div>
                 <div class="boxes">
                     <div class="box">
-                        <img  class="emojif" src="./img/emote_feliz.jpeg" alt="">
+                        <img id="img_feliz" onclick="mudarcenario()"  class="emojif" src="./img/emote_feliz.jpeg" alt="">
                         <h4>Feliz</h4>
                     </div>
     
                     <div class="box">
-                        <img  class="emojif" src="./img/emote_triste.jpeg" alt="">
+                        <img id="img_triste" onclick="mudarcenario()"  class="emojif" src="./img/emote_triste.jpeg" alt="">
                         <h4>Triste</h4>
                     </div>
     
                     <div class="box">
-                        <img  class="emojip" src="./img/emote_bravo23.png" alt="">
+                        <img id="img_bravo" onclick="mudarcenario()"  class="emojip" src="./img/emote_bravo23.png" alt="">
                         <h4>Bravo</h4>
                     </div>
                     
                     <div class="box">
-                        <img  class="emojif" src="./img/emote_normal.jpeg" alt="">
+                        <img id="img_normal"  onclick="mudarcenario()" class="emojif" src="./img/emote_normal.jpeg" alt="" >
                         <h4>normal</h4>
                     </div>
                 </div>
@@ -115,3 +115,16 @@
     
 </body>
 </html>
+
+
+<script>
+
+function mudarcenario() {
+
+    window.location.href = "./cadastro_emocoes.html"
+
+
+    
+}
+
+</script>
