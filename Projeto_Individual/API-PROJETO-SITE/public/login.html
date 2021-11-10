@@ -14,7 +14,7 @@
             <div class="card">
                 <h2 class="bem-vindo">Bem Vindo!</h2>
                 <div class="formulario">
-                    <form  method="post" onsubmit="return cadastrar()">
+                    <form id="form_login"  method="post" onsubmit="return cadastrar()">
                         <span class="letra">Username ou E-mail:</span><br>
                         <input name="email" type="text" placeholder="meuemail@provedor.com">
                         <br>
@@ -22,7 +22,7 @@
                         <input name="senha" type="password" placeholder="******">
                         <br>
                         <br><br>
-                        <button class="btn">Cadastrar</button><br><br>
+                        <button type="button" onclick="cadastro()" class="btn">Cadastrar</button><br><br>
                         <p class="perguntaC" >Não possui um cadastro?</p><br>
                         <a id="hiperlinkc" href="./cadastro.html">cadastre-se agora</a>
                     </form>
@@ -35,3 +35,20 @@
 
 </body>
 </html>
+
+
+<script>
+
+
+function cadastro() {
+
+    window.location.href = "./cadastro_emocoes.html"
+
+    
+}
+
+
+</script>
+
+
+
