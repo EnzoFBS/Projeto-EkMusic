@@ -488,4 +488,16 @@ form {
   #h4_emocoes{
     margin-right: 40%;
   }
+
+  #img-refresh{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+  }
+
+  #refresh{
+    display: none;
+    margin-left: 50%;
+    margin-top: 3%;
+  }
   
