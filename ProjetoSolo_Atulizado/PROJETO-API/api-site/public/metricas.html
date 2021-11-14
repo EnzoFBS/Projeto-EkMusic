@@ -35,7 +35,7 @@
             <div class="container2">
                 <div class="titulo"><h2>
                     A maioria das pessoas que entraram no <br>
-                     site buscam o sentimento de:  <p id="musicapro" >A musica mais procurada é: </p>
+                     site buscam o sentimento de:  <p id="musicapro" >A musica mais sugerida foi: </p>
                 </h2>
                 </div>
                 <div class="caixas">
@@ -104,10 +104,10 @@ var ctx = document.getElementById('myChartbar1').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['feliz', 'apaixonado', 'calmo', 'motivado'],
+        labels: ['felicidade', 'paixão', 'paz', 'motivação'],
         datasets: [{
             label: 'emoções',
-            data: [aleatorio, aleatorio2, aleatorio3, aleatorio4, aleatorio5, aleatorio6],
+            data: [aleatorio,aleatorio2, aleatorio3, aleatorio4],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -135,6 +135,10 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+
+
+
+
 
 var ctx = document.getElementById('myChart2bar2').getContext('2d');
 var myChart = new Chart(ctx, {
@@ -164,6 +168,7 @@ var myChart = new Chart(ctx, {
         }]
     },
     options: {
+        
         scales: {
             y: {
                 beginAtZero: true
@@ -173,8 +178,18 @@ var myChart = new Chart(ctx, {
 });
 
 
+var emocao_feliz =  localStorage.getItem('feliz') 
+var emocao_calmo =  localStorage.getItem('calmo')
+var emocao_apaixo =  localStorage.getItem('apaixonado')
+var emocao_motivado =  localStorage.getItem('motivado')
+
+
+
+
 
 
 
  
     </script>
+
+
