@@ -9,9 +9,10 @@
     <title>AcquaTec | Simulador</title>
 
     <script src="./js/funcoes.js"></script>
+    <script src="./js/adivinhacao.js"></script>
 
     <link rel="icon" href="./assets/icon/favicon.ico">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleglobal.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -20,64 +21,93 @@
 
 <body>
 
-    <!--header inicio-->
+    
     <div class="header">
         <div class="container">
-            <h1>AcquaTec</h1>
+            <h1 class="title1" >Music-Emotion</h1>
             <ul class="navbar">
+                <li ><a href="index.html">Inicial</a></li>
                 <li>
-                    <a href="./index.html">Inicial</a>
-                </li>
-                <li class="agora">Simulador</li>
-                <li>|</li>
-                <li>
-                    <a href="./login.html">Login</a>
+                    <a href="./metricas.html">Métricas</a>
                 </li>
                 <li>
-                    <a href="./login.html">Cadastro</a>
+                    <a href="./cadastro_emocoes.html">emoções </a>
                 </li>
             </ul>
         </div>
-    </div>
+      </div>  
 
+      <div class="container2">
+          
+      </div>
 
-    <!-- simulador inicio -->
-    <div class="simulador">
+      <div class="page2">
+          <div class="container2">
+            <h1>JOGO ADIVINHAÇÃO</h1>
+              <div class="card5">
+                  <h2>Regras</h2>
+                <div class="form_cadastro">
+                    <p> 1. Você terá que acertar meu genero musical favorito</p>
+                    <p> 2. Você terá que apenas 3 tentativas para acertar</p>
+                    <p> 3.Terá entre 15 generos musicais 2 corretos</p>
+                    <p> 4.Lembre-se eu gosto muito de mudanças então cada rodada terá um genero diferente</p><br>
+
+                    <div class="alinhar">
+                    
+                  <span class="txt_palpite" > Insira seu palpite </span> <br> <br> <input id="ipt_gen" type="text" placeholder="Ada Lovelace"> <br><br>  <button class="btn9" onclick="sorteia()" > Enviar palpite</button>
+                    <br>
+                </div>
+
+                </div>
+                
+              </div>
+              
+          </div>
+
+          <div class="container2">
+              <div class="card6">
+                  
+                <div class="form_cadastro">
+                    <h2>Os generos musicais <br> que gosto são</h2> <br><br>
+                    <p> 1.Gospel</p>
+                    <p> 2.Rap</p>
+                    <p> 3.Sertanejo</p>
+                    <p> 4.Trap</p>
+                    <p> 5.MPB</p>
+                    <p> 6.POP</p>
+                    <p> 7.Pagode</p>
+                    <p> 8.Raggae</p>
+                    <p> 9.Rock</p>
+                    <p> 10.Eletrônica</p>
+                    <p> 11.Clássica</p>
+                    <p> 12.Jazz</p>
+                    <p> 13.Funk</p>
+                    <p> 14.Raps Geek</p>
+                    <p> 15.Samba</p>
+
+                </div>
+                
+              </div>
+              
+          </div>
+      </div>
+      
+
+      <div class="footer">
         <div class="container">
-            <h2>Simulador</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit
-                dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam
-                laboriosam eaque alias. Reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet
-                reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit
-                dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam
-                laboriosam eaque alias. Reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet
-                reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit
-                dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam
-                laboriosam eaque alias. Reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet
-                reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit
-                dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam
-                laboriosam eaque alias. Reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet
-                reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
-
+            <h4>Desenvolvido Por Enzo Fabrizio &copy; 2021</h4>
         </div>
     </div>
-    <!-- simulador fim -->
 
-    <!--footer inicio-->
-    <div class="footer">
-        <div class="container">
-            <h4>Feito com amor por um aluno BandTec &copy; 2021</h4>
-        </div>
-    </div>
-    <!--footer fim-->
 
+
+
+    
+
+
+       
+
+    
 
 </body>
 
