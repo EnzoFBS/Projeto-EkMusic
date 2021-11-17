@@ -1,71 +1,16 @@
 
-function sorteia() {
 
-    return Math.round(Math.random() * 10);
+var segredo = [] 
 
- }
 
- function sorteiaNumeros(quantidade) {
 
-     var segredos = [];
+ function sorteia() {
 
-     var numero = 1;
+       var numeroAleatorio = ((Math.random()*14+1).toFixed())
+      
 
-     while(numero <= quantidade) {
 
-           var numeroAleatorio = sorteia();
-           var achou = false;
 
-           if (numeroAleatorio !== 0) {
-                  for(var posicao = 0; posicao < segredos.length; posicao++) {
-
-                        if(segredos[posicao] == numeroAleatorio){
-                             achou = true;
-                             break;
-                        }
-
-                  }
-
-                  if (achou == false) {
-                        segredos.push(numeroAleatorio);
-                        numero++;
-                  }
-           }
-
-     }
-
-     return segredos;
-
- }
-
- var segredos = sorteiaNumeros(3);
-
- console.log(segredos);
-
- var genero = ipt_gen.value 
- genero.value.focus();
-
- function verifica() {
-
-    var achou = false;
-
-    for(var posicao = 0; posicao < segredos.length; posicao++) {
-
-           if(input.value == segredos[posicao]) {
-
-                  alert("Você ACERTOU!");
-                  achou = true;
-                  break;
-           } 
-    }
-
-    if(achou == false) {
-
-           alert("Você ERROU!");
-    }
-
-    input.value = "";
-    input.focus();
-
+        
  }
 
