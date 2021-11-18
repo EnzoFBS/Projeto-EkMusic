@@ -14,7 +14,7 @@ body {
     color: #ff7900;
     border-bottom: 3px solid #ff7900;
     height: 9vh;
-    background-color: rgb(219, 181, 9);
+    background-color: rgb(0, 0, 0);
     /* border: 3px solid yellow; */
   }
   
@@ -26,7 +26,7 @@ body {
   
   .header a {
     text-decoration: none;
-    color: #ff8500;
+    color: #ff5e00;
     font-family: 'Exo 2';
   }
   
@@ -117,7 +117,7 @@ body {
   text-align: center;
   color: #e29127;
   margin: 0;
-  /* border: 3px solid orange; */
+  /* border: 3px solid  orange; */
 }
 
 .social .boxes {
@@ -147,10 +147,10 @@ body {
 }
 
 .cardzao{
-      width: 64.3%;
-
+      width: 81.9%;
+color: #FF5100;
     border-radius: 10px;
-    background: rgba(231, 213, 47, 0.6);
+    background: #000000;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 5.5px );
     -webkit-backdrop-filter: blur( 5.5px );
@@ -164,7 +164,7 @@ body {
 
 
 .social .boxs img {
-  width: 200px;
+  width: 250px;
   align-self: center;
 }
 
@@ -239,9 +239,9 @@ body {
   }
 
   .footer {
-    background-color: #279eeef1;
+    background-color: #000000f1;
     height: 100px;
-    color: white;
+    color: #FF5100;
     margin: 0;
     padding: 0;
     display: flex;
