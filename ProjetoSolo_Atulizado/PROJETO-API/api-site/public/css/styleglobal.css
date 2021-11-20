@@ -162,6 +162,10 @@ color: #FF5100;
 
 }
 
+.box .cardzao p{
+  text-align: justify;
+}
+
 
 .social .boxs img {
   width: 250px;
@@ -177,12 +181,12 @@ color: #FF5100;
 .social .box h4 {
   color: rgb(214, 57, 10);
   margin-top: 30px;
-  margin-bottom: 15%;
+  margin-bottom: 30%;
 }
 
 .social .boxs h4 {
   color: rgb(214, 57, 10);
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .textofeliz{
@@ -356,8 +360,8 @@ body .pages {
 
 .page .card4 { 
     
-  height: 82vh;
-  width: 20vw;
+  height: 86vh;
+  width: 18vw;
   display: flex;
   justify-content: center;
   align-content: space-around;
@@ -373,6 +377,18 @@ body .pages {
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   margin-left: 30%;
 }
+
+.card4 .letra {
+  margin-top: 8px
+}
+
+.card4 select{
+ 
+  height: 30px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
 
 #form_cadastro{
   display: flex;
@@ -587,6 +603,9 @@ schan {
     /* border: 3px solid pink; */
   }
 
+  .titulo h3{
+    text-align: center;
+  }
 
 
   .social2 {
@@ -655,7 +674,7 @@ schan {
 
 
   #musicapro{
-    margin-left: 19%;
+    margin-left: 10%;
   }
 
 
@@ -691,10 +710,50 @@ schan {
 
 
  #back-metric{
-   background: url('../img/montanha.jpg');
+  
    background-repeat: no-repeat;
    background-size: cover;
  }
+
+
+ /* Table */
+
+ 
+table{
+	margin: 20px 0 40px;
+  margin-left: 24%;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  
+}
+
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+
+
+}
+
+td {
+  border: 1px solid #000000;
+	padding:10px 15px;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+th{
+  border: 1px solid #000000;
+	padding:10px 15px;	
+}
+
+
+ 
 
 
 

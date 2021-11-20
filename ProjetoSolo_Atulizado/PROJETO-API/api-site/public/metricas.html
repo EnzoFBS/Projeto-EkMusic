@@ -34,19 +34,19 @@
         <div class="social2">
             <div class="container2">
                 <div class="titulo"><h2>
-                    A maioria das pessoas que entraram no <br>
-                     site buscam o sentimento de:  <p id="musicapro" >A musica mais sugerida foi: </p>
+                    O sentimento mais comum das pessoas das <br> pessoas que entraram no 
+                     site foi:  <p id="musicapro" >A musica mais sugerida foi: </p>
                 </h2>
                 </div>
                 <div class="caixas">
                     <div class="caixa">
                         <div class="graf">
-                            <canvas id="myChartbar1" width="50" height="20"></canvas>
+                            <canvas id="myChartbar1" width="40" height="20"></canvas>
                         </div>
                     </div>
                     <div class="caixa">
                         <div class="musica_yt">
-                        <iframe width="400" height="220" src="https://www.youtube.com/embed/04854XqcfCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="450" height="275" src="https://www.youtube.com/embed/04854XqcfCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -58,25 +58,49 @@
         <div class="social2">
             <div class="container2">
                 <div class="titulo">
-                    <h2>O genero favoritos dos visitantes: <p id="musicapro" >A musica mais sugerida foi: </p>  </h2>      <br><br>
+                    <h3> Ranking dos generos favoritos dos usuários</h3><br><br>
                 </div>
-                <div class="caixas">
-                    <div class="caixa">
-                         
-                    <div class="graf2">
-                        <canvas id="myChart2bar2" width="200px" height="100px"></canvas>
-                    </div>
-               
-                </div>
-
-                <div class="caixa">
-                         
-                    <div class="graf3">
-                        <canvas id="myChart3bar3" width="200px" height="107px"></canvas>
-                    </div>
-               
-                </div>
-        </div>
+                <table>
+                    <thead>  
+                    <tr>
+                        <th>Ranking</th>
+                        <th>genero Musical</th>
+                        <th>quantidade usuários</th>
+                    </tr>
+                    </thead>
+                        <tbody>
+                            <tr>
+                                <td>fds</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>   
+            </table>
 
       </div>  
     </div>  
@@ -112,12 +136,12 @@ var aleatorio6 = (Math.random() * 10).toFixed(0);
 
 var ctx = document.getElementById('myChartbar1').getContext('2d');
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'doughnut',
     data: {
         labels: ['felicidade', 'paixão', 'paz', 'motivação'],
         datasets: [{
             label: 'emoções',
-            data: [emocao_feliz,emocao_calmo, emocao_apaixo, emocao_motivado],
+            data: [aleatorio,aleatorio2, aleatorio3, aleatorio4],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -142,7 +166,8 @@ var myChart = new Chart(ctx, {
             y: {
                 beginAtZero: true
             }
-        }
+        },
+        maintainAspectRatio: false
     }
 });
 
