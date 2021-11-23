@@ -93,7 +93,7 @@
       if (ipt_gen.value == 1 && ipt_gen.value == segredos[segredos.indexOf(1)] ) {
 
          
-            img1.innerHTML = `  <img src="../public/img/gospel.png"  style="width: 400px;" alt="">`  
+            img1.innerHTML = `  <img src="https://i2.wp.com/maistocadas.mus.br/wp-content/uploads/2019/06/musicas-gospel-mais-tocadas.png?fit=600%2C359&ssl=1"  style="width: 400px;" alt="">`  
             iframe2.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/lzCf7JyHbPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
                  
       }
@@ -102,7 +102,7 @@
       else if (ipt_gen.value == 2 && ipt_gen.value == segredos[segredos.indexOf(2)] ) {
 
            
-            img1.innerHTML = `  <img src="../public/img/rapi.jpg"  style="width: 400px;height:300px;" alt="">`            
+            img1.innerHTML = `  <img src="https://img.freepik.com/vetores-gratis/palavra-de-neon-de-rap-e-microfone-no-contorno-de-chama_1262-11901.jpg?size=338&ext=jpg"  style="width: 400px;height:300px;" alt="">`            
             iframe2.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/dvFkPDWk0OM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
       }
 
@@ -123,7 +123,7 @@
       else if (ipt_gen.value == 5 && ipt_gen.value == segredos[segredos.indexOf(5)] ) {
 
            
-            img1.innerHTML = `  <img src="../public/img/mpb.png"  style="width: 400px;" alt="">` 
+            img1.innerHTML = `  <img src="https://www.vagalume.com.br/1470154983100588/default"  style="width: 400px;" alt="">` 
             iframe2.innerHTML =  `<iframe src="https://www.youtube.com/embed/uph0CERrjPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`         
       }
 
@@ -143,31 +143,31 @@
       else if (ipt_gen.value == 8 && ipt_gen.value == segredos[segredos.indexOf(8)] ) {
 
             
-            img1.innerHTML = `  <img src="../public/img/regue.jpg"  style="width: 400px;" alt="">`
+            img1.innerHTML = `  <img src="https://4429028l.ha.azioncdn.net/img/2020/09/produto/4555/1/large/reggae-just-relax-02.jpg"  style="width: 400px;" alt="">`
             iframe2.innerHTML =  `<iframe width="560" height="315" src="https://www.youtube.com/embed/fxvUzfzr6-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`          
       }
 
       else if (ipt_gen.value == 9 && ipt_gen.value == segredos[segredos.indexOf(9)] ) {
 
         
-            img1.innerHTML = `  <img src="../public/img/rock.jpeg"  style="width: 400px;" alt="">`    
+            img1.innerHTML = `  <img src="https://img.vagalume.fm/1464201608479108132/bg";" alt="">`    
             iframe2.innerHTML =  `<iframe width="560" height="315" src="https://www.youtube.com/embed/-B19u9tHnIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`      
       }
       else if (ipt_gen.value == 10 && ipt_gen.value == segredos[segredos.indexOf(10)] ) {
 
         
-            img1.innerHTML = `  <img src="../public/img/eltro.png"  style="width: 400px;" alt="">`   
+            img1.innerHTML = `  <img src="https://www.vagalume.com.br/146411300413492499/default"  style="width: 400px;" alt="">`   
             iframe2.innerHTML =   `<iframe width="560" height="315" src="https://www.youtube.com/embed/BGpzGu9Yp6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`      
       }
       else if (ipt_gen.value == 11 && ipt_gen.value == segredos[segredos.indexOf(11)] ) {
 
         
-            img1.innerHTML = `  <img src="../public/img/musiclassic.jpg"  style="width: 400px;" alt="">` 
+            img1.innerHTML = `  <img src="https://cdns-images.dzcdn.net/images/cover/e988a0aed4092034d00b0421569253c8/500x500.jpg"  style="width: 400px;" alt="">` 
             iframe2.innerHTML =  `<iframe width="560" height="315" src="https://www.youtube.com/embed/_mVW8tgGY_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`         
       }
       else if (ipt_gen.value == 12 && ipt_gen.value == segredos[segredos.indexOf(12)] ) {
 
-            img1.innerHTML = `  <img src="../public/img/jaz.jpg"  style="width: 400px;" alt="">`  
+            img1.innerHTML = `  <img src="https://image.freepik.com/vetores-gratis/instrumentos-musicais-de-jazz_81894-3155.jpg"  style="width: 400px;" alt="">`  
             iframe2.innerHTML =  `<iframe width="560" height="315" src="https://www.youtube.com/embed/gy1B3agGNxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`       
       }
       else if (ipt_gen.value == 13 && ipt_gen.value == segredos[segredos.indexOf(13)] ) {
@@ -180,7 +180,7 @@
       else if (ipt_gen.value == 14 && ipt_gen.value == segredos[segredos.indexOf(14)] ) {
 
          
-            img1.innerHTML = `  <img src="../public/img/ra.jpg"  style="width: 400px;" alt="">` 
+            img1.innerHTML = `  <img src="http://pm1.narvii.com/6947/a1fad3f9b80150f374d1653c4f8e425adb8c3ad2r1-900-500v2_uhq.jpg"  style="width: 400px;" alt="">` 
             iframe2.innerHTML =  `<iframe width="560" height="315" src="https://www.youtube.com/embed/4z-RgbJ8NJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`         
       }
 
