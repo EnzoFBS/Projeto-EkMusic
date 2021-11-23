@@ -42,7 +42,7 @@
 
     }
 
-    var segredos = sorteiaNumeros(2);
+    var segredos = sorteiaNumeros();
 
     console.log(segredos);
 
