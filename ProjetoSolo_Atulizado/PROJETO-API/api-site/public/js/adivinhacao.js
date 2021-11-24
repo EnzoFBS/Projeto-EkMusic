@@ -42,7 +42,7 @@
 
     }
 
-    var segredos = sorteiaNumeros();
+    var segredos = sorteiaNumeros(2);
 
     console.log(segredos);
 
@@ -103,7 +103,7 @@
 
            
             img1.innerHTML = `  <img src="https://img.freepik.com/vetores-gratis/palavra-de-neon-de-rap-e-microfone-no-contorno-de-chama_1262-11901.jpg?size=338&ext=jpg"  style="width: 400px;height:300px;" alt="">`            
-            iframe2.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/dvFkPDWk0OM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+            iframe2.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/7pD8k2zaLqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
       }
 
       else if (ipt_gen.value == 3 && ipt_gen.value == segredos[segredos.indexOf(3)] ) {
@@ -116,7 +116,7 @@
       else if (ipt_gen.value == 4 && ipt_gen.value == segredos[segredos.indexOf(4)] ) {
 
           
-            img1.innerHTML = `  <img src="../public/img/trap.jpg"  style="width: 400px;" alt="">` 
+            img1.innerHTML = `  <img src="https://musica.culturamix.com/blog/wp-content/uploads/2020/01/Trap.jpg"  style="width: 400px;" alt="">` 
             iframe2.innerHTML =  `<iframe width="560" height="315" src="https://www.youtube.com/embed/6Tlscs__yf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`         
       }
 
@@ -124,21 +124,21 @@
 
            
             img1.innerHTML = `  <img src="https://www.vagalume.com.br/1470154983100588/default"  style="width: 400px;" alt="">` 
-            iframe2.innerHTML =  `<iframe src="https://www.youtube.com/embed/uph0CERrjPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`         
+            iframe2.innerHTML =  `<iframe width="560" height="315" src="https://www.youtube.com/embed/uph0CERrjPM?start=28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`         
       }
 
       else if (ipt_gen.value == 6 && ipt_gen.value == segredos[segredos.indexOf(6)] ) {
 
             
-            img1.innerHTML = `  <img src="../public/img/PUP.jpeg"  style="width: 400px;" alt="">` 
+            img1.innerHTML = `  <img src="https://pausadrammatica.files.wordpress.com/2013/10/pop-art-gary-grayson.jpg?w=736"  style="width: 400px;" alt="">` 
             iframe2.innerHTML =  `<iframe width="560" height="315" src="https://www.youtube.com/embed/MOWDb2TBYDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`         
       }
 
       else if (ipt_gen.value == 7 && ipt_gen.value == segredos[segredos.indexOf(7)] ) {
 
          
-            img1.innerHTML = `  <img src="../public/img/pagode.jpg"  style="width: 400px;" alt="">`  
-            iframe2.innerHTML =  `<iframe width="560" height="315" src="https://www.youtube.com/embed/qiAoCkue1PE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`        
+            img1.innerHTML = `  <img src="http://www.fmodia.com.br/wp-content/uploads/2018/07/me-encontra-no-pagode-rei-do-bacalhau-fm-o-dia-01.jpg"  style="width: 400px;" alt="">`  
+            iframe2.innerHTML =  `<iframe width="560" height="315" src="https://www.youtube.com/embed/EfXB0cHkNB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`        
       }
       else if (ipt_gen.value == 8 && ipt_gen.value == segredos[segredos.indexOf(8)] ) {
 
@@ -150,14 +150,14 @@
       else if (ipt_gen.value == 9 && ipt_gen.value == segredos[segredos.indexOf(9)] ) {
 
         
-            img1.innerHTML = `  <img src="https://img.vagalume.fm/1464201608479108132/bg";" alt="">`    
+            img1.innerHTML = `  <img src="https://img.vagalume.fm/1464201608479108132/bg";  style="width: 400px;" alt="">`    
             iframe2.innerHTML =  `<iframe width="560" height="315" src="https://www.youtube.com/embed/-B19u9tHnIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`      
       }
       else if (ipt_gen.value == 10 && ipt_gen.value == segredos[segredos.indexOf(10)] ) {
 
         
             img1.innerHTML = `  <img src="https://www.vagalume.com.br/146411300413492499/default"  style="width: 400px;" alt="">`   
-            iframe2.innerHTML =   `<iframe width="560" height="315" src="https://www.youtube.com/embed/BGpzGu9Yp6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`      
+            iframe2.innerHTML =   `<iframe width="560" height="315" src="https://www.youtube.com/embed/5_voPff_EPE?start=80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`      
       }
       else if (ipt_gen.value == 11 && ipt_gen.value == segredos[segredos.indexOf(11)] ) {
 
@@ -187,8 +187,8 @@
       else if (ipt_gen.value == 15 && ipt_gen.value == segredos[segredos.indexOf(15)] ) {
 
             
-            img1.innerHTML = `  <img src="../public/img/sambaa.jpeg"  style="width: 400px;" alt="">`   
-            iframe2.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/eaKhlTuhVXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`         
+            img1.innerHTML = `  <img src="https://www.univeritas.com/sites/ung.br/files/fields/imagemTopo/noticias/2018/11/samba.png"  style="width: 400px;" alt="">`   
+            iframe2.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/1i38P2MgHBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`         
       }
 
 
