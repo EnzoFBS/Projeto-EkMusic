@@ -28,29 +28,47 @@ CREATE TABLE medida (
 
 
 /* para workbench - local - desenvolvimento */
-CREATE DATABASE acquatec;
+CREATE DATABASE sense_me;
+USE sense_me;
 
-USE acquatec;
-
-CREATE TABLE usuario (
+	CREATE TABLE usuario (
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(50),
 	email VARCHAR(50),
 	senha VARCHAR(50)
 );
 
-CREATE TABLE aviso (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	titulo VARCHAR(100),
-    descricao VARCHAR(150),
-	fk_usuario INT,
-	FOREIGN KEY (fk_usuario) REFERENCES usuario(id)
-); 
+select * from usuario;
 
-CREATE TABLE medida (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	temperatura DECIMAL,
-	umidade DECIMAL,
-	momento DATETIME,
-	fk_aquario INT
+CREATE TABLE genero(
+idGenero int primary key auto_increment,
+nomeGenero varchar(45)
+)auto_increment=100;
+
+select * from genero;
+
+CREATE TABLE genero_do_usuario(
+idGenero_usuario int,
+fk_usuario int ,
+fk_genero int,
+foreign key(fk_usuario) references usuario(id),
+foreign key(fk_genero) references genero(idGenero),
+primary key(`idGenero_usuario`,`fk_usuario`,`fk_genero`)
 );
+
+create table emocoes(
+idEmocao int primary key auto_increment,
+emocao varchar(6),
+check(emocao = 'feliz' or emocao ='triste' or emocao ='normal' or emocao = 'triste')
+);
+
+select * from emocoes;
+
+select * from genero_do_usuario;
+
+
+   INSERT INTO genero (nomeGenero) VALUES ('pao');
+
+
+
+
