@@ -14,7 +14,7 @@
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Document</title>
 </head>
-<body id="back-metric" >
+<body id="back-metric" onload="atualizarFeed()" >
 
     <div class="header">
         <div class="container">
@@ -55,48 +55,8 @@
                         <div class="titulo">
                             <h1> Ranking dos generos favoritos dos usuários</h1><br><br>
                         </div>
-                        <table>
-                            <thead>  
-                            <tr>
-                                <th>Ranking</th>
-                                <th>genero Musical</th>
-                                <th>quantidade usuários</th>
-                            </tr>
-                            </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>fds</td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>   
-                    </table>
-        
+                        <table id="tabela_ranking" >
+                          <div class="feed_container"></div>
               </div>  
             </div>  
         
@@ -123,6 +83,110 @@
 
 
 <script>
+
+
+
+function atualizarFeed() {
+        fetch("/ranking/listar/", {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            }       
+        }).then(function (resposta) {
+            if (resposta.ok) {
+                if (resposta.status == 204) {
+                    var feed = document.getElementById("tabela_ranking");
+                    var mensagem = document.createElement("td");
+                    mensagem.innerHTML = "Nenhum resultado encontrado."
+                    feed.appendChild(mensagem);
+                    throw "Nenhum resultado encontrado!!";
+                }
+
+                resposta.json().then(function (resposta) {
+                    console.log("Dados recebidos: ", JSON.stringify(resposta));
+
+                    var feed = document.getElementById("feed_container");
+                    feed.innerHTML = "";
+               
+                    for (let i = 0; i < resposta.length; i++) {
+                        var rank = resposta[i];
+
+                        // criando e manipulando elementos do HTML via JavaScript
+                        var span_tend = document.createElement("span");
+                        var div_caixa = document.createElement("div");
+                        var span_teoria = document.createElement("span");
+                        var span_favs = document.createElement("span");
+                     
+                        
+
+                        div_coluna1.innerHTML = `${i + 1}`;
+                        span_teoria.innerHTML = rank.genero_favorito;
+                        span_favs.innerHTML = `${rank.curtidas}`;
+                    
+        
+
+                        span_tend.className = "tendencias";
+                        span_favs.className = "box-tendencia";
+                        div_caixa.className = "favoritos";
+
+                        div_caixa.appendChild(span_teoria);
+                        div_caixa.appendChild(span_favs);
+                        span_tend.appendChild(div_caixa)
+                        feed_container.appendChild(span_tend)
+                      
+                     
+                    }
+
+
+                    finalizarAguardar()
+
+              
+                });
+            } else {
+                throw ('Houve um erro na API!');
+            }
+        }).catch(function (resposta) {
+            console.error(resposta);
+        
+        });
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -248,12 +312,6 @@ var myChart = new Chart(ctx, {
         }
     }
 });
-
-
-var emocao_feliz =  localStorage.getItem('feliz') 
-var emocao_calmo =  localStorage.getItem('calmo')
-var emocao_apaixo =  localStorage.getItem('apaixonado')
-var emocao_motivado =  localStorage.getItem('motivado')
 
 
 
