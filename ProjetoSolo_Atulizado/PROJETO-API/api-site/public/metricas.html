@@ -53,10 +53,18 @@
                 <div class="social3">
                     <div class="container3">
                         <div class="titulo">
-                            <h1> Ranking dos generos favoritos dos usuários</h1><br><br>
+                            <h1> Ranking dos generos musicais favoritos dos usuários</h1><br><br>
+                            <div class="titulo_metricas" >
+                                
+                                 <span id="ranki" > ranking </span> 
+                                  <span id="nomi_metric" > nome </span>
+                                 <span id="use_metric" > usuários </span>
+                    
+                            </div>
                         </div>
-                        <table id="tabela_ranking" >
-                          <div class="feed_container"></div>
+                          <div id="feed_container">
+
+                          </div>
               </div>  
             </div>  
         
@@ -106,7 +114,7 @@ function atualizarFeed() {
                     console.log("Dados recebidos: ", JSON.stringify(resposta));
 
                     var feed = document.getElementById("feed_container");
-                    feed.innerHTML = "";
+              
                
                     for (let i = 0; i < resposta.length; i++) {
                         var rank = resposta[i];
@@ -116,11 +124,11 @@ function atualizarFeed() {
                         var div_caixa = document.createElement("div");
                         var span_teoria = document.createElement("span");
                         var span_favs = document.createElement("span");
+                        var span_rank =  document.createElement("span");
                      
                         
-
-                        div_coluna1.innerHTML = `${i + 1}`;
-                        span_teoria.innerHTML = rank.genero_favorito;
+                        span_rank.innerHTML = `${i + 1 }º`
+                        span_teoria.innerHTML = `${rank.nome}   `;
                         span_favs.innerHTML = `${rank.curtidas}`;
                     
         
@@ -129,6 +137,7 @@ function atualizarFeed() {
                         span_favs.className = "box-tendencia";
                         div_caixa.className = "favoritos";
 
+                        div_caixa.appendChild(span_rank)                           
                         div_caixa.appendChild(span_teoria);
                         div_caixa.appendChild(span_favs);
                         span_tend.appendChild(div_caixa)
@@ -137,8 +146,6 @@ function atualizarFeed() {
                      
                     }
 
-
-                    finalizarAguardar()
 
               
                 });

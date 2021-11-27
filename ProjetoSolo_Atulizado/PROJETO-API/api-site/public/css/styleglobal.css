@@ -1,5 +1,7 @@
 /* Index - Página Principal */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -171,6 +173,7 @@ text-align: justify;
 width: 250px;
 align-self: center;
 }
+
 
 
 .social .box img {

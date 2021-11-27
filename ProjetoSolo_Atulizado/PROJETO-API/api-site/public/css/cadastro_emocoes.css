@@ -6,6 +6,8 @@
   /* border: 3px solid yellow; */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 .header2 .container {
   display: flex;
   justify-content: space-between;
