@@ -55,9 +55,9 @@
                             <div class="cardzao">
                                 <img src="./img/teste6.jpg" alt="icone da visão">
                                 <h4 class="titulos" >Paz</h4><br>
-                                <p>A musica tem um poder de  <br> conseguir nos deixar felizes <br>
-                                    mesmo em dias tristes que <br>  nada esta dando certo,mas <br> 
-                                    mas ela concesegue mexer<br> com os nossos sentimentos profundamente</p>
+                                <p>A musica também ela é capaz <br> nos trazer paz em momentos  <br> muito tensos
+                                    em nossas vidas , <br>ou trazer   uma paz só para<br> pensar em certos momentos  <br> do dia a dia, por isso então
+                                    <br> esse sentimento pode até nos <br> fazer bem,e melhorar nosso dia</p>
                             </div>    
                         </div>
     
@@ -122,7 +122,23 @@
 
 function mudarcenario() {
 
-    window.location.href = "./cadastro.html"    
+   
+    // aguardar();
+
+    var email = sessionStorage.EMAIL_USUARIO;
+    var nome = sessionStorage.NOME_USUARIO;
+
+    if (email != null && nome != null) {
+        window.location.href = "./cadastro_emocoes.html"   
+        
+        // finalizarAguardar();
+    } else {
+        window.location.href = "./login.html";
+    }
+
+
+
+     
 }
 
 </script>

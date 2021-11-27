@@ -18,6 +18,8 @@
      width: 99.14vw;
    overflow-x: hidden;
  }
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
  
  .page2 .card5 { 
      
