@@ -94,6 +94,10 @@
 
 
 
+
+
+
+
 function atualizarFeed() {
         fetch("/ranking/listar/", {
             method: "GET",
@@ -156,62 +160,34 @@ function atualizarFeed() {
             console.error(resposta);
         
         });
-    } 
 
 
 
+        fetch("/sentimento/pegar/", {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            }       
+        }).then(function (resposta) {
+            if (resposta.ok) {
+                resposta.json().then(function (resposta) {
+                    console.log("Dados recebidos: ", JSON.stringify(resposta));
+
+                        var tristao = (resposta[0].emoções); // 
+                        var normalzao = (resposta[1].emoções);
+                        var felizao = (resposta[2].emoções);
+                        var bravao = (resposta[3].emoções);
+                      
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var aleatorio =  (Math.random() * 10).toFixed(0);
-var aleatorio2 = (Math.random() * 10).toFixed(0);
-var aleatorio3 = (Math.random() * 10).toFixed(0);
-var aleatorio4 = (Math.random() * 10).toFixed(0);
-var aleatorio5 = (Math.random() * 10).toFixed(0);
-var aleatorio6 = (Math.random() * 10).toFixed(0);
-
-var ctx = document.getElementById('myChartbar1').getContext('2d');
+ var ctx = document.getElementById('myChartbar1').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ['felicidade', 'paixão', 'paz', 'motivação'],
+        labels: ['triste', 'normal', 'feliz', 'bravo'],
         datasets: [{
             label: 'emoções',
-            data: [aleatorio,aleatorio2, aleatorio3, aleatorio4],
+            data: [tristao,normalzao,felizao,bravao],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -240,6 +216,33 @@ var myChart = new Chart(ctx, {
         maintainAspectRatio: false
     }
 });
+
+       
+                });
+            } else {
+                throw ('Houve um erro na API!');
+            }
+        }).catch(function (resposta) {
+            console.error(resposta);
+        
+        });
+
+
+        var aleatorio2 = (Math.random() * 10).toFixed(0);
+
+
+
+
+
+ 
+
+    } 
+
+
+ 
+
+
+
 
 
 

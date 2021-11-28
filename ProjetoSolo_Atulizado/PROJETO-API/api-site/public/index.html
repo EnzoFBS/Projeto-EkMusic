@@ -83,22 +83,22 @@
                 </div>
                 <div class="boxes">
                     <div class="box">
-                        <img id="img_feliz" onclick="mudarcenario()"  class="emojif" src="./img/emote_feliz.jpeg" alt="">
+                        <img id="img_feliz" onclick="feliz()"  class="emojif" src="./img/emote_feliz.jpeg" alt="">
                         <h4>Feliz</h4>
                     </div>
     
                     <div class="box">
-                        <img id="img_triste" onclick="mudarcenario()"  class="emojif" src="./img/emote_triste.jpeg" alt="">
+                        <img id="img_triste" onclick="triste()"  class="emojif" src="./img/emote_triste.jpeg" alt="">
                         <h4>Triste</h4>
                     </div>
     
                     <div class="box">
-                        <img id="img_bravo" onclick="mudarcenario()"  class="emojip" src="./img/emote_bravo23.png" alt="">
+                        <img id="img_bravo" onclick="bravo()"  class="emojip" src="./img/emote_bravo23.png" alt="">
                         <h4>Bravo</h4>
                     </div>
                     
                     <div class="box">
-                        <img id="img_normal"  onclick="mudarcenario()" class="emojif" src="./img/emote_normal.jpeg" alt="" >
+                        <img id="img_normal"  onclick="normal()" class="emojif" src="./img/emote_normal.jpeg" alt="" >
                         <h4>normal</h4>
                     </div>
                 </div>
@@ -120,18 +120,46 @@
 
 <script>
 
-function mudarcenario() {
+function feliz() {
 
-   
-    // aguardar();
+    var felizVar = 'feliz'
 
-    var email = sessionStorage.EMAIL_USUARIO;
+    
+
+
+  var email = sessionStorage.EMAIL_USUARIO;
     var nome = sessionStorage.NOME_USUARIO;
 
     if (email != null && nome != null) {
-        window.location.href = "./cadastro_emocoes.html"   
+       
         
-        // finalizarAguardar();
+    fetch("/sentimento/feliz", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                felizServer: felizVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Cadastro realizado com sucesso!");
+           
+              
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+     
+        });
+
+        window.location.href = "./cadastro_emocoes.html"  
+        
+      
     } else {
         window.location.href = "./login.html";
     }
@@ -139,6 +167,171 @@ function mudarcenario() {
 
 
      
+}
+
+
+
+
+function triste() {
+
+
+    
+    var tristeVar = 'triste'
+
+    
+
+
+  var email = sessionStorage.EMAIL_USUARIO;
+    var nome = sessionStorage.NOME_USUARIO;
+
+    if (email != null && nome != null) {
+       
+        
+    fetch("/sentimento/triste", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                tristeServer: tristeVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Cadastro realizado com sucesso!");
+           
+              
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+     
+        });
+
+        window.location.href = "./cadastro_emocoes.html"  
+        
+      
+    } else {
+        window.location.href = "./login.html";
+    }
+
+
+    
+
+
+
+ 
+}
+
+
+
+function bravo() {
+
+
+    
+    var bravoVar = 'bravo'
+
+    
+
+
+  var email = sessionStorage.EMAIL_USUARIO;
+    var nome = sessionStorage.NOME_USUARIO;
+
+    if (email != null && nome != null) {
+       
+        
+    fetch("/sentimento/bravo", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                bravoServer: bravoVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Cadastro realizado com sucesso!");
+           
+              
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+     
+        });
+
+        window.location.href = "./cadastro_emocoes.html"  
+        
+      
+    } else {
+        window.location.href = "./login.html";
+    }
+
+
+
+
+
+ 
+}
+
+
+function normal() {
+
+
+    
+    var normalVar = 'normal'
+
+    
+
+
+  var email = sessionStorage.EMAIL_USUARIO;
+    var nome = sessionStorage.NOME_USUARIO;
+
+    if (email != null && nome != null) {
+       
+        
+    fetch("/sentimento/normal", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                normalServer: normalVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Cadastro realizado com sucesso!");
+           
+              
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+     
+        });
+
+        window.location.href = "./cadastro_emocoes.html"  
+        
+      
+    } else {
+        window.location.href = "./login.html";
+    }
+
+
+
+
+ 
 }
 
 </script>
