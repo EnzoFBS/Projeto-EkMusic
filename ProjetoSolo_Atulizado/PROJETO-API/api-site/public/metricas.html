@@ -46,7 +46,7 @@
                         </div>
                         <h1 id="musica_sug" >Musica mais sugerida foi:</h1>
                         <div class="musica_yt">
-                        <iframe id="iframe_sug" width="450" height="275" src="https://www.youtube.com/embed/04854XqcfCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <span id="iframe_metric" ></span>
                         </div>
                    
                 </div>
@@ -217,7 +217,6 @@ var myChart = new Chart(ctx, {
     }
 });
 
-       
                 });
             } else {
                 throw ('Houve um erro na API!');
@@ -227,101 +226,101 @@ var myChart = new Chart(ctx, {
         
         });
 
+            //feliz
 
-        var aleatorio2 = (Math.random() * 10).toFixed(0);
+       var felizpopVar =  sessionStorage.getItem('feliz_pop');
+       var felizmpbVar =  sessionStorage.getItem('feliz_MPB');
+       var felizrockVar =  sessionStorage.getItem('feliz_rock');
+       var felizrapVar =  sessionStorage.getItem('feliz_rap');
+       var felizgospelVar =  sessionStorage.getItem('feliz_gospel');
+       var felizfunkVar =  sessionStorage.getItem('feliz_funk');
+   
+       //calmo
+            var calmopopVar =  sessionStorage.getItem('calmo_pop')
+            var calmompbVar =  sessionStorage.getItem('calmo_MPB')
+            var calmorockVar =  sessionStorage.getItem('calmo_rock')
+            var calmorapVar =  sessionStorage.getItem('calmo_rap')
+            var calmofunkVar =  sessionStorage.getItem('calmo_funk')
+            var calmogospelVar =  sessionStorage.getItem('calmo_gospel')
 
 
 
+        //feliz
 
 
- 
+        if (felizpopVar == 1) {
+            
+
+            iframe_metric.innerHTML = ` <iframe  width="560" height="315" src="https://www.youtube.com/embed/MOWDb2TBYDg?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+            storage.clear();
+        }
+        else if (felizrockVar == 2) {
+            iframe_metric.innerHTML = ` <iframe  width="560" height="315" src="https://www.youtube.com/embed/Y-NjZp7Aurg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
+            storage.clear();
+        }
+        else if (felizmpbVar == 3) {
+
+         iframe_metric.innerHTML =   ` <iframe  width="560" height="315" src="https://www.youtube.com/embed/uph0CERrjPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
+         storage.clear();
+        }
+        else if (felizrapVar == 4 ) {
+
+        iframe_metric.innerHTML =   ` <iframe width="560" height="315" src="https://www.youtube.com/embed/7pD8k2zaLqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
+        storage.clear();
+        }
+        else if (felizfunkVar == 5 ) {
+
+        iframe_metric.innerHTML =   ` <iframe  width="560" height="315" src="https://www.youtube.com/embed/bWnS2dIDgQA?start=80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
+        storage.clear();
+            }
+
+         else if (felizgospelVar == 6) {
+
+        iframe_metric.innerHTML =   ` <iframe  width="560" height="315" src="https://www.youtube.com/embed/lzCf7JyHbPg?start=19" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
+        storage.clear();
+        }
+
+        // calmo
+
+        else if (calmopopVar == 7) {
+
+        iframe_metric.innerHTML =   ` <iframe width="560" height="315" src="https://www.youtube.com/embed/vD0JsUY4ATE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
+        storage.clear();
+        }
+
+        else if (calmorockVar == 8) {
+            iframe_metric.innerHTML = ` <iframe width="560" height="315" src="https://www.youtube.com/embed/5Nj1D2y-PY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
+            storage.clear();
+        }
+        else if (calmompbVar == 9) {
+
+         iframe_metric.innerHTML =   `<iframe  width="560" height="315" src="https://www.youtube.com/embed/V6kTUpRoRHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+         storage.clear();
+        }
+        else if (calmorapVar == 10 ) {
+
+        iframe_metric.innerHTML =   ` <iframe  width="560" height="315" src="https://www.youtube.com/embed/TQ5DUv_ZwRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
+        storage.clear();
+        }
+        else if (calmofunkVar == 11 ) {
+
+        iframe_metric.innerHTML =   ` <iframe width="560" height="315" src="https://www.youtube.com/embed/D91HXC_o_QQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
+        storage.clear();
+            }
+
+         else if (calmogospelVar == 12) {
+
+        iframe_metric.innerHTML =   ` <iframe  width="560" height="315" src="https://www.youtube.com/embed/YDbtPDbHdqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
+        storage.clear();
+        }
+
+       
 
     } 
 
 
  
 
-
-
-
-
-
-
-
-var ctx = document.getElementById('myChart2bar2').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['rock', 'pop', 'rap', 'funk', 'gospel', 'MPB'],
-        datasets: [{
-            label: 'genero musical',
-            data: [aleatorio, aleatorio2, aleatorio3, aleatorio4, aleatorio5, aleatorio6],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 3
-        }]
-    },
-    options: {
-        
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
-
-
-var ctx = document.getElementById('myChart3bar3').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['rock', 'pop', 'rap', 'funk', 'gospel', 'MPB'],
-        datasets: [{
-            label: 'genero musical',
-            data: [aleatorio, aleatorio2, aleatorio3, aleatorio4, aleatorio5, aleatorio6],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 3
-        }]
-    },
-    options: {
-        
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
 
 
 

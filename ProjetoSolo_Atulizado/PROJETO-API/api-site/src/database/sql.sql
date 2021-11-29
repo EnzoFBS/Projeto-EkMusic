@@ -1,73 +1,52 @@
--- Arquivo de apoio, caso você queira criar tabelas como as aqui criadas para a API funcionar.
--- Você precisa executar os comandos no banco de dados para criar as tabelas,
--- ter este arquivo aqui não significa que a tabela em seu BD estará como abaixo!
 
-/* para sql server - remoto - produção */
-
-CREATE TABLE usuario (
-	id INT PRIMARY KEY IDENTITY(1,1),
-	nome VARCHAR(50),
-	email VARCHAR(50),
-	senha VARCHAR(50),
-);
-
-CREATE TABLE aviso (
-	id INT PRIMARY KEY IDENTITY(1,1),
-	titulo VARCHAR(100),
-    descricao VARCHAR(150),
-	fk_usuario INT FOREIGN KEY REFERENCES usuario(id)
-); 
-
-CREATE TABLE medida (
-	id INT PRIMARY KEY IDENTITY(1,1),
-	temperatura DECIMAL,
-	umidade DECIMAL,
-	momento DATETIME,
-	fk_aquario INT
-);
-
-
-/* para workbench - local - desenvolvimento */
 CREATE DATABASE sense_me;
 USE sense_me;
+
+create table emocoes(
+idEmocao int primary key auto_increment,
+emocao varchar(10)
+);
+insert into emocoes(emocao) values ('feliz'),('feliz'),('feliz'),('triste'),('triste'),('normal'),('bravo');
+
+select * from emocoes;
+
+
+
+select count(emocao) as 'emoções' from emocoes group by emocao order by emocao desc;
+select count(emocao) as emocaofeliz from emocoes where emocao = 'feliz';
+select count(emocao) as emocaobravo from emocoes where emocao = 'bravo';
+select count(emocao) as emocaotriste from emocoes where emocao = 'triste';
+select count(emocao) as emocaonormal from emocoes where emocao = 'normal';
 
 	CREATE TABLE usuario (
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(50),
 	email VARCHAR(50),
-	senha VARCHAR(50)
+	senha VARCHAR(50),
+    genero_favorito varchar(50),
+    fk_emocao int,
+    foreign key (fk_emocao) references emocoes(idEmocao)
 );
 
-select * from usuario;
+select 	* from usuario;
 
-CREATE TABLE genero(
-idGenero int primary key auto_increment,
-nomeGenero varchar(45)
-)auto_increment=100;
-
-select * from genero;
-
-CREATE TABLE genero_do_usuario(
-idGenero_usuario int,
-fk_usuario int ,
-fk_genero int,
-foreign key(fk_usuario) references usuario(id),
-foreign key(fk_genero) references genero(idGenero),
-primary key(`idGenero_usuario`,`fk_usuario`,`fk_genero`)
-);
-
-create table emocoes(
-idEmocao int primary key auto_increment,
-emocao varchar(6),
-check(emocao = 'feliz' or emocao ='triste' or emocao ='normal' or emocao = 'triste')
-);
-
-select * from emocoes;
-
-select * from genero_do_usuario;
+insert into usuario values
+(2,'Renato','renato@gmail.com','7894','pop',null),
+(3,'jorge','jorge@gmail.com','7894','rock',null),
+(4,'Carlos','sambario@gmail.com','7894','mpb',null),
+(5,'Baiano','baiano@gmail.com','7894','funk',null),
+(6,'Rodinei','rodinei@gmail.com','7894','pop',null);
 
 
-   INSERT INTO genero (nomeGenero) VALUES ('pao');
+
+
+
+select count(usuario.genero_favorito) as curtidas, genero_favorito as nome  from usuario group by genero_favorito order by curtidas desc;
+
+
+
+
+
 
 
 
