@@ -173,7 +173,7 @@
       else if (ipt_gen.value == 13 && ipt_gen.value == segredos[segredos.indexOf(13)] ) {
 
           
-            img1.innerHTML = `  <img src="../public/img/fk_funk.jpg"  style="width: 400px;" alt="">`   
+            img1.innerHTML = `  <img src="https://i.ytimg.com/vi/EV_26_5FRzA/hqdefault.jpg"  style="width: 400px;" alt="">`   
             iframe2.innerHTML =  `<iframe width="560" height="315" src="https://www.youtube.com/embed/bWnS2dIDgQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`       
       }
 
