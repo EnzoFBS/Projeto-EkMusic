@@ -79,34 +79,34 @@ else if (sel_sentimento.value == 'feliz' && sel_genero_musical.value == 'gospel'
 else if (sel_sentimento.value == 'calmo' && sel_genero_musical.value == 'pop' ) {
     calminho++
     sessionStorage.setItem('calmo_pop',7);
-aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2>  <br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/vD0JsUY4ATE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
+aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa te trazer paz.:</H2>  <br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/vD0JsUY4ATE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
 }
 else if (sel_sentimento.value == 'calmo' && sel_genero_musical.value == 'rock' ) {
     sessionStorage.setItem('calmo_rock',8);
     calminho++
-aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2>  <br><br> <iframe style ="margin-left:23%" width="560" height="315" src="https://www.youtube.com/embed/5Nj1D2y-PY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
+aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa te trazer paz.:</H2>  <br><br> <iframe style ="margin-left:23%" width="560" height="315" src="https://www.youtube.com/embed/5Nj1D2y-PY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
 }
 else if (sel_sentimento.value == 'calmo' && sel_genero_musical.value == 'MPB' ) {
     calminho++
     sessionStorage.setItem('calmo_MPB',9);
-aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2>  <br><br><iframe style ="margin-left:23%" width="560" height="315" src="https://www.youtube.com/embed/V6kTUpRoRHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
+aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa te trazer paz.:</H2>  <br><br><iframe style ="margin-left:23%" width="560" height="315" src="https://www.youtube.com/embed/V6kTUpRoRHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
 }
 else if (sel_sentimento.value == 'calmo' && sel_genero_musical.value == 'rap' ) {
     calminho++
     sessionStorage.setItem('calmo_rap',10);
-aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2>  <br><br><iframe style="margin-left: 23%;" width="560" height="315" src="https://www.youtube.com/embed/TQ5DUv_ZwRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
+aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa te trazer paz.:</H2>  <br><br><iframe style="margin-left: 23%;" width="560" height="315" src="https://www.youtube.com/embed/TQ5DUv_ZwRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
 }
 
 else if (sel_sentimento.value == 'calmo' && sel_genero_musical.value == 'funk' ) {
     calminho++
     sessionStorage.setItem('calmo_funk',11);
-aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2><br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/D91HXC_o_QQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
+aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa te trazer paz.:</H2><br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/D91HXC_o_QQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
 }
 
 else if (sel_sentimento.value == 'calmo' && sel_genero_musical.value == 'gospel' ) {
     calminho++
     sessionStorage.setItem('calmo_gospel',12);
-aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2>  <br><br><br> <iframe style ="margin-left:23%" width="560" height="315" src="https://www.youtube.com/embed/YDbtPDbHdqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
+aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa te trazer paz.:</H2>  <br><br><br> <iframe style ="margin-left:23%" width="560" height="315" src="https://www.youtube.com/embed/YDbtPDbHdqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
 }
 
 
@@ -114,34 +114,34 @@ aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa music
  else if (sel_sentimento.value == 'motivado' && sel_genero_musical.value == 'pop' ) {
     sessionStorage.setItem('motivado_pop',13);
     motivadinho++
-aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2>  <br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/Svtr-p4mrQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
+aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa  seu dia:</H2>  <br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/Svtr-p4mrQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
 }
 else if (sel_sentimento.value == 'motivado' && sel_genero_musical.value == 'rock' ) {
     sessionStorage.setItem('motivado_rock',14);
     motivadinho++
-aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2>  <br><br><iframe style ="margin-left:23%" width="560" height="315" src="https://www.youtube.com/embed/04854XqcfCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
+aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa  seu dia:</H2>  <br><br><iframe style ="margin-left:23%" width="560" height="315" src="https://www.youtube.com/embed/04854XqcfCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
 }
 else if (sel_sentimento.value == 'motivado' && sel_genero_musical.value == 'MPB' ) {
     sessionStorage.setItem('motivado_mpb',15);
     motivadinho++
-aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2>  <br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/FmMleq61iJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
+aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa  seu dia:</H2>  <br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/FmMleq61iJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
 }
 else if (sel_sentimento.value == 'motivado' && sel_genero_musical.value == 'rap' ) {
     sessionStorage.setItem('motivado_rap',16);
     motivadinho++
-aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2>  <br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/h8lzw6ZRjLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
+aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa  seu dia:</H2>  <br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/h8lzw6ZRjLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
 }
 
 else if (sel_sentimento.value == 'motivado' && sel_genero_musical.value == 'funk' ) {
     sessionStorage.setItem('motivado_funk',17);
     motivadinho++
-aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2><br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/5LqeD-m7Iho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
+aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa  seu dia:</H2><br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/5LqeD-m7Iho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
 }
 
 else if (sel_sentimento.value == 'motivado' && sel_genero_musical.value == 'gospel' ) {
     sessionStorage.setItem('motivado_gospel',18);
     motivadinho++
-aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2>  <br><br><br> <iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/UnEd_pFGWGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
+aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa  seu dia:</H2>  <br><br><br> <iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/UnEd_pFGWGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
 }
 
 
@@ -149,35 +149,35 @@ aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa music
  else if (sel_sentimento.value == 'apaixonado' && sel_genero_musical.value == 'pop' ) {
     sessionStorage.setItem('apaixonado_pop',19);
     apaixonadinho++
-aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2>  <br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/9YcrMk_cZyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
+aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musicadeixar você mais apaixonado:</H2>  <br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/9YcrMk_cZyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
 }
 else if (sel_sentimento.value == 'apaixonado' && sel_genero_musical.value == 'rock' ) {
     sessionStorage.setItem('apaixonado_rock',20);
     apaixonadinho++
-aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2>  <br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/8aZHCPc9EwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
+aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa deixar você mais apaixonado:</H2>  <br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/8aZHCPc9EwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
 }
 else if (sel_sentimento.value == 'apaixonado' && sel_genero_musical.value == 'MPB' ) {
     sessionStorage.setItem('apaixonado_mpb',21);
     apaixonadinho++
-aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2>  <br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/wyaCWQvOLYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
+aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa deixar você mais apaixonado:</H2>  <br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/wyaCWQvOLYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
 }
 
 else if (sel_sentimento.value == 'apaixonado' && sel_genero_musical.value == 'rap' ) {
     sessionStorage.setItem('apaixonado_rap',22);
     apaixonadinho++
-aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2>  <br><br><iframe  style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/yfGMPDKq1Pg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
+aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa deixar você mais apaixonado:</H2>  <br><br><iframe  style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/yfGMPDKq1Pg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
 }
 
 else if (sel_sentimento.value == 'apaixonado' && sel_genero_musical.value == 'funk' ) {
     apaixonadinho++
     sessionStorage.setItem('apaixonado_funk',23);
-aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2><br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/dNNL70kE6Vc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
+aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa deixar você mais apaixonado:</H2><br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/dNNL70kE6Vc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  `
 }
 
 else if (sel_sentimento.value == 'apaixonado' && sel_genero_musical.value == 'gospel' ) {
     apaixonadinho++
     sessionStorage.setItem('apaixonado_gospel',24);
-    aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa alegrar seu dia:</H2>  <br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/Df8Wxxjv5Xc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
+    aparece_div.innerHTML = ` <h2 style="margin-left:23%;" >Sugerimos que essa musica possa deixar você mais apaixonado:</H2>  <br><br><iframe style="margin-left:23%;" width="560" height="315" src="https://www.youtube.com/embed/Df8Wxxjv5Xc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
 }
 
 

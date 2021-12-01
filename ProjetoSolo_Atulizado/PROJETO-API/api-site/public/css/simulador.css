@@ -5,6 +5,8 @@
 
     height: 80vh;
      width: 99.14vw;
+     overflow-y: hidden;
+   overflow-x: hidden;
     
   }
  
@@ -16,7 +18,8 @@
      justify-content: center;
      height: 100vh;
      width: 99.14vw;
-   overflow-x: hidden;
+     overflow-y: hidden;
+     overflow-x: hidden;
  }
 
  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
@@ -39,6 +42,8 @@
  border: 1px solid rgba( 255, 255, 255, 0.18 );
    margin-left: 79%;
    margin-bottom: 20%;
+   overflow-y: hidden;
+   overflow-x: hidden;
  
  }
 
@@ -167,6 +172,8 @@ color: #e3b062;
  
    align-items: center;
  flex-direction: column;
+ overflow-y: hidden;
+   overflow-x: hidden;
  
    margin-left: 79%;
    margin-bottom: 20%;
@@ -186,6 +193,8 @@ color: #e3b062;
  
    height: 60vh;
     width: 99.14vw;
+    overflow-y: hidden;
+   overflow-x: hidden;
    
  }
  

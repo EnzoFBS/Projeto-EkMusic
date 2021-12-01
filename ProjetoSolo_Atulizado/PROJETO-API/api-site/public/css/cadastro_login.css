@@ -33,6 +33,7 @@ body .page {
     justify-content: center;
     height: 100vh;
     width: 100vw;
+    
 }
 
 body .pages {
@@ -43,6 +44,8 @@ body .pages {
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  overflow-y: hidden;
+   overflow-x: hidden;
 }
 
 .page .card { 
